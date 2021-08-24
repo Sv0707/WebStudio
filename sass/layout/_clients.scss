@@ -1,0 +1,104 @@
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  
+  .clients-list > .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+  .clients-list > &:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  .clients-list > &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  }
+
+  .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    padding: 63px 24px;
+  
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms var(--transition-timing),
+    opacity 250ms var(--transition-timing),
+    box-shadow 250ms var(--transition-timing);
+  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+  
+  .clients-picture-block {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .clients-list-link {
+    display: block;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+    transition: box-shadow 250ms var(--transition-timing);
+  
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px
+    rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  
+  &:hover .item-overlay,
+  &:focus .item-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  .clients-list-desc {
+    width: 370px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  
+  .clients-list .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: var(--title-link-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-decoration: none;
+    }
+  
+  .clients-list-link .text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    text-decoration: none;
+  }
