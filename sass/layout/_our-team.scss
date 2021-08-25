@@ -54,9 +54,14 @@
   .our-team__description-block {
     padding-top: 30px;
     padding-bottom: 24px;
-    padding-left: 122px;
-    padding-right: 122px;
+    padding-left: 32px;
+    padding-right: 32px;
     text-align: center;
+
+    @media screen and (min-width: 480px) {
+      padding-left: 122px;
+      padding-right: 122px;
+    } 
 
     @media screen and (min-width: 768px) {
       padding-left: 74px;
