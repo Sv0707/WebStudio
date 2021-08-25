@@ -26,7 +26,9 @@
     @media screen and (min-width: 768px) {
       flex-basis: calc(100% / 2 - 30px);
       margin-left: 30px;
+      max-width: 354px;
         }
+
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 4 - 30px);
         }
@@ -35,27 +37,55 @@
   .our-team__title {
     margin-top: 0;
     margin-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
     color: var(--title-link-color);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.14;
+    line-height: 1.19;
     text-transform: capitalize;
   }
   
   .our-team__text {
     margin-top: 0;
     margin-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
     font-size: 16px;
     line-height: 1.18;
   }
   
   .our-team__description-block {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    padding-left: 122px;
+    padding-right: 122px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 74px;
+      padding-right: 74px;
+      }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+      padding-left: 32px;
+      padding-right: 32px;
+      }
   }
   
+.our-team__img {
+  width: 290px;
+  height: 100%;
+
+  @media screen and (min-width: 480px) {
+  width: 450px;
+  height: 460px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+      }
+}

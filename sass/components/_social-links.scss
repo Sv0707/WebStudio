@@ -46,9 +46,13 @@
   }
   }
   
-  .social-links_right-side {
-    margin-top: 0;
+  .social-links_footer {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    margin-bottom: 0;
+    }
   }
   
   .social-links__link_background-dark {
