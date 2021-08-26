@@ -29,18 +29,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 609px;
+    width: 96vw;
+    height: 96vh;
+    max-width: 450px;
+    max-height: 609px; 
+    overflow: auto;
     padding: 40px;
     background-color: var(--white-color);
 
     @media screen and (min-width: 480px) {
-      width: 450px;
+      max-width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     }
   }
   

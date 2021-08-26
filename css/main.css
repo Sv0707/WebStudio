@@ -102,7 +102,7 @@ body {
 }
 
 .logo {
-  display: inline-block;
+  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -185,11 +185,15 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav__link {
@@ -230,9 +234,7 @@ body {
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
+  display: none;
 }
 
 .nav__item:not(:last-child) {
@@ -240,9 +242,7 @@ body {
 }
 
 .contacts-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
 }
 
 .contacts-list__item {
@@ -279,8 +279,23 @@ body {
   margin-right: 10px;
 }
 
+.burger-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger-button__icon {
+  transition: fill 250ms var(--transition-timing);
+}
+
+.burger-button:hover .burger-button__icon,
+.burger-button:focus .burger-button__icon {
+  fill: var(--accent-color);
+}
+
 .hero {
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   letter-spacing: 0.06em;
@@ -1013,22 +1028,25 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 609px;
+  width: 96vw;
+  height: 96vh;
+  max-width: 450px;
+  max-height: 609px;
+  overflow: auto;
   padding: 40px;
   background-color: var(--white-color);
 }
 
 @media screen and (min-width: 480px) {
   .backdrop-modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .backdrop-modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1138,13 +1156,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .modal-form-message {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .modal-form-message:focus {
@@ -1162,20 +1174,14 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--main-text-color);
-}
-
-@media screen and (min-width: 480px) {
-  .modal-form-checkbox-label {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-form-checkbox-label {
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     padding-left: 12px;
   }
 }
