@@ -738,14 +738,33 @@ body {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   color: white;
-  padding: 63px 24px;
+  padding: 20px 24px;
   transform: translateY(100%);
   opacity: 0;
   transition: transform 250ms var(--transition-timing), opacity 250ms var(--transition-timing), box-shadow 250ms var(--transition-timing);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) {
+  .item-overlay {
+    padding: 77px 24px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .item-overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .item-overlay {
+    padding: 63px 24px;
+  }
 }
 
 .clients-picture-block {
