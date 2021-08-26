@@ -10,44 +10,88 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <!-- <header class="header">
-      <div class="container header__container">
-        <nav class="nav">
-          <a href="./index.html" class="logo logo_black-theme"
-            ><span class="accent">Web</span>Studio
-          </a>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link current-link accent">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__link">
-              <svg class="contacts-list__icon" width="16" height="12">
-                <use href="./images/svg-sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-            </a>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="nav">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo_black-theme">Studio
+          </span>
+        </a>
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Студия</a>
           </li>
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link">
-              <svg class="contacts-list__icon" width="10" height="16">
-                <use href="./images/svg-sprite.svg#icon-smartphone"></use>
-                </svg>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link current-link accent">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger-button" data-menu-open>
+        <svg class="burger-button__icon" width="40" height="40">
+          <use href="./images/svg-sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+              <button class="mobile-menu__close" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/svg-sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list-nav list">
+          <li class="mobile-menu__item-nav">
+            <a href="./index.html" class="mobile-menu__link-nav">Студия</a>
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a href="./portfolio.html" class="mobile-menu__link-nav accent">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a href="" class="mobile-menu__link-nav">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-contacts list">
+          <li class="mobile-menu__item-contacts">
+            <a href="tel:+380961111111" class="mobile-menu__tel">
                 +38 096 111 11 11
               </a>
           </li>
+          <li class="mobile-menu__item-contacts">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__email">
+                info@devstudio.com
+            </a>
+          </li>
         </ul>
+       <ul class="mobile-menu__list-social list">
+         <li class="mobile-menu__item-social"><a href="" class="mobile-menu__link-social">Instagram</a></li>
+         <li class="mobile-menu__item-social"><a href="" class="mobile-menu__link-social">Twitter</a></li>
+         <li class="mobile-menu__item-social"><a href="" class="mobile-menu__link-social">Facebook</a></li>
+         <li class="mobile-menu__item-social"><a href="" class="mobile-menu__link-social-last">LinkedIn</a></li>
+       </ul>
       </div>
-    </header> -->
+    </div>
+      <ul class="contacts-list list">
+        <li class="contacts-list__item">
+          <a href="mailto:info@devstudio.com" class="contacts-list__link">
+            <svg class="contacts-list__icon icon-envelope">
+              <use href="./images/svg-sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a href="tel:+380961111111" class="contacts-list__link">
+            <svg class="contacts-list__icon icon-smartphone">
+              <use href="./images/svg-sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+        </li>
+      </ul>
+    </div>
+  </header>
     <main>
 <section class="section">
         <div class="container">
@@ -73,9 +117,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/Technokryak.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/Technokryak_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/Technokryak_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/Technokryak.webp 1x, ./images/Technokryak@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/Technokryak.jpg 1x, ./images/Technokryak@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/Technokryak_tab.webp 1x, ./images/Technokryak@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/Technokryak_tab.jpg 1x, ./images/Technokryak@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/Technokryak_mob.webp 1x, ./images/Technokryak@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/Technokryak_mob.jpg 1x, ./images/Technokryak@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Технокряк">
                     </picture>
                     <p class="item-overlay">
@@ -97,9 +147,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/NewOrleanGoldenStar.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/NewOrleanGoldenStar_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/NewOrleanGoldenStar_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/NewOrleanGoldenStar.webp 1x, ./images/NewOrleanGoldenStar@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/NewOrleanGoldenStar.jpg 1x, ./images/NewOrleanGoldenStar@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/NewOrleanGoldenStar_tab.webp 1x, ./images/NewOrleanGoldenStar@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/NewOrleanGoldenStar_tab.jpg 1x, ./images/NewOrleanGoldenStar@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/NewOrleanGoldenStar_mob.webp 1x, ./images/NewOrleanGoldenStar@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/NewOrleanGoldenStar_mob.jpg 1x, ./images/NewOrleanGoldenStar@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Постер New Orlean vs Golden Star">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -120,9 +176,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                         <picture>
-                          <source srcset="./images/Seafood.jpg" media="(min-width: 1200px)">
-                          <source srcset="./images/Seafood_tab.jpg" media="(min-width: 768px)">
-                          <source srcset="./images/Seafood_mob.jpg" media="(min-width: 320px)">
+                          <source srcset="./images/Seafood.webp 1x, ./images/Seafood@2x.webp 2x" media="(min-width: 1200px)"
+                          type="image/webp">
+                          <source srcset="./images/Seafood.jpg 1x, ./images/Seafood@2x.jpg 2x" media="(min-width: 1200px)">
+                          <source srcset="./images/Seafood_tab.webp 1x, ./images/Seafood@2x_tab.webp 2x" media="(min-width: 768px)"
+                          type="image/webp">
+                          <source srcset="./images/Seafood_tab.jpg 1x, ./images/Seafood@2x_tab.jpg 2x" media="(min-width: 768px)">
+                          <source srcset="./images/Seafood_mob.webp 1x, ./images/Seafood@2x_mob.webp 2x" media="(min-width: 320px)"
+                          type="image/webp">
+                          <source srcset="./images/Seafood_mob.jpg 1x, ./images/Seafood@2x_mob.jpg 2x" media="(min-width: 320px)">
                           <img class="clients__img" src="#" alt="Ресторан Seafood">
                       </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -143,9 +205,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/Prime.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/Prime_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/Prime_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/Prime.webp 1x, ./images/Prime@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/Prime.jpg 1x, ./images/Prime@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/Prime_tab.webp 1x, ./images/Prime@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/Prime_tab.jpg 1x, ./images/Prime@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/Prime_mob.webp 1x, ./images/Prime@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/Prime_mob.jpg 1x, ./images/Prime@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Проект Prime">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -166,9 +234,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/Boxes.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/Boxes_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/Boxes_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/Boxes.webp 1x, ./images/Boxes@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/Boxes.jpg 1x, ./images/Boxes@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/Boxes_tab.webp 1x, ./images/Boxes@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/Boxes_tab.jpg 1x, ./images/Boxes@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/Boxes_mob.webp 1x, ./images/Boxes@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/Boxes_mob.jpg 1x, ./images/Boxes@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Проект Boxes">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -189,9 +263,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/InspirationHasNoBorders.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/InspirationHasNoBorders_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/InspirationHasNoBorders_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/InspirationHasNoBorders.webp 1x, ./images/InspirationHasNoBorders@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/InspirationHasNoBorders.jpg 1x, ./images/InspirationHasNoBorders@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/InspirationHasNoBorders_tab.webp 1x, ./images/InspirationHasNoBorders@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/InspirationHasNoBorders_tab.jpg 1x, ./images/InspirationHasNoBorders@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/InspirationHasNoBorders_mob.webp 1x, ./images/InspirationHasNoBorders@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/InspirationHasNoBorders_mob.jpg 1x, ./images/InspirationHasNoBorders@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Inspiration has no Borders">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -212,9 +292,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/LimitedEdition.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/LimitedEdition_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/LimitedEdition_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/LimitedEdition.webp 1x, ./images/LimitedEdition@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/LimitedEdition.jpg 1x, ./images/LimitedEdition@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/LimitedEdition_tab.webp 1x, ./images/LimitedEdition@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/LimitedEdition_tab.jpg 1x, ./images/LimitedEdition@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/LimitedEdition_mob.webp 1x, ./images/LimitedEdition@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/LimitedEdition_mob.jpg 1x, ./images/LimitedEdition@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Издание Limited Edition">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -235,9 +321,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/LAB.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/LAB_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/LAB_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/LAB.webp 1x, ./images/LAB@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/LAB.jpg 1x, ./images/LAB@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/LAB_tab.webp 1x, ./images/LAB@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/LAB_tab.jpg 1x, ./images/LAB@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/LAB_mob.webp 1x, ./images/LAB@2x_mob.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                        <source srcset="./images/LAB_mob.jpg 1x, ./images/LAB@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Проект LAB">
                     </picture>
                     <p class="item-overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -258,9 +350,15 @@
                   <a href="" class="clients__link">
                     <div class="clients-picture-block">
                       <picture>
-                        <source srcset="./images/GrowingBusiness.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/GrowingBusiness_tab.jpg" media="(min-width: 768px)">
-                        <source srcset="./images/GrowingBusiness_mob.jpg" media="(min-width: 320px)">
+                        <source srcset="./images/GrowingBusiness.webp 1x, ./images/GrowingBusiness@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                        <source srcset="./images/GrowingBusiness.jpg 1x, ./images/GrowingBusiness@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/GrowingBusiness_tab.webp 1x, ./images/GrowingBusiness@2x_tab.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/GrowingBusiness_tab.jpg 1x, ./images/GrowingBusiness@2x_tab.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/GrowingBusiness_mob.webp 1x, ./images/GrowingBusiness@2x_mob.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                        <source srcset="./images/GrowingBusiness_mob.jpg 1x, ./images/GrowingBusiness@2x_mob.jpg 2x" media="(min-width: 320px)">
                         <img class="clients__img" src="#" alt="Growing Business">
                     </picture>
                     <p class="item-overlay">
@@ -356,5 +454,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
