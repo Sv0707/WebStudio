@@ -783,32 +783,6 @@ body {
   }
 }
 
-.our-team__img {
-  width: 290px;
-  height: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .our-team__img {
-    width: 450px;
-    height: 460px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .our-team__img {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .our-team__img {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .regular-customers {
   display: flex;
   flex-wrap: wrap;
