@@ -29,6 +29,8 @@ h1, h2, h3, p, ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -1262,7 +1264,6 @@ body {
   height: 96vh;
   max-width: 450px;
   max-height: 609px;
-  overflow: auto;
   padding: 40px;
   background-color: var(--white-color);
 }
