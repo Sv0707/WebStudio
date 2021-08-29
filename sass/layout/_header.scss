@@ -231,7 +231,11 @@
   }
 
 .mobile-menu__list-nav {
+  margin-bottom: 200px;
+
+  @media screen and (min-width: 480px) {
   margin-bottom: 302px;
+  }
 }
 
 .mobile-menu__item-nav:not(:last-child) {
@@ -240,11 +244,17 @@
 
   .mobile-menu__link-nav {
     font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-link-color);
+    text-decoration: none;
+
+    @media screen and (min-width: 480px) {
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--title-link-color);
-    text-decoration: none;
+    }
   }
 
   .mobile-menu__close {
@@ -274,7 +284,11 @@
 }
 
 .mobile-menu__list-contacts {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-menu__item-contacts:first-child {
@@ -284,19 +298,31 @@
 .mobile-menu__tel {
   text-decoration: none;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 22px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mobile-menu__email {
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mobile-menu__list-social {
@@ -309,17 +335,25 @@
 
 .mobile-menu__link-social {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   
 
 &:last-child {
   border-right: none;
+}
+
+@media screen and (min-width: 480px) {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 }
 
